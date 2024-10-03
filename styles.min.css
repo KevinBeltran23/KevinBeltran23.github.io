@@ -3,11 +3,12 @@ html {
 }
 
 body {
-    background-color: white;
+    background-color: #f0f8ff; /* Light blue background */
     position: relative;
     min-height: 100vh;
     padding: 0;
     margin: 0;
+    font-family: Arial, sans-serif; /* Font for the whole site */
 }
 
 main {
@@ -25,7 +26,7 @@ main {
     position: sticky;
     top: 0;
     width: 100%;
-    height: 7%;
+    height: auto; /* Changed to auto for dynamic height */
     z-index: 10;
 
     display: flex;
@@ -33,40 +34,46 @@ main {
     align-items: center;
     text-align: center;
 
-    background-color: black;
+    background-color: #3a9bdc; /* Light blue color */
     color: white;
-    padding: 0;
-
-    /* Debug border */
-    /* border: solid red; */
+    padding: 0px 0px; /* Added padding for better spacing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .nav-list {
     display: flex;
-    flex-direction: row;
-    position: relative;
-    right: 30px;
+    flex-wrap: wrap; /* Allow the list to wrap if necessary */
     list-style: none;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
 }
 
 .navbar a {
     color: white;
     font-weight: bold;
-    margin: 0 12px;
+    margin: 0 10px; /* Adjusted margin for better spacing */
     text-decoration: none;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    transition: color 0.3s; /* Smooth transition for hover */
+}
+
+.navbar a:hover {
+    color: #ffcc00; /* Hover color */
 }
 
 /* CSS for resume sections */
 .resume {
     max-width: 800px; /* Centering the resume */
     margin: 0 auto; /* Centering */
+    background-color: #ffffff; /* White background for sections */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding for sections */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .section {
     width: 100%; /* Ensures section takes full width */
     margin-bottom: 20px;
-    padding-left: 20px; /* Consistent left padding */
 }
 
 .entry {
@@ -74,8 +81,10 @@ main {
 }
 
 h2 {
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #3a9bdc; /* Light blue border */
     padding-bottom: 5px;
+    margin-bottom: 10px; /* Space below headings */
+    color: #3a9bdc; /* Heading color */
 }
 
 .skills-list,
@@ -90,11 +99,28 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #3a9bdc; /* Light blue background */
     color: white;
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 2.5rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Shadow for footer */
+    font-size: 14px; /* Font size for footer */
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .navbar a {
+        margin: 5px 0; /* Adjust margin for links */
+    }
+
+    .resume {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+}
