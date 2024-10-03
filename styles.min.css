@@ -42,18 +42,19 @@ main {
 
 .nav-list {
     display: flex;
-    flex-wrap: wrap; /* Allow the list to wrap if necessary */
+    flex-direction: row; 
+    position: relative;
+    right: 30px;
     list-style: none;
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
 }
 
 .navbar a {
     color: white;
     font-weight: bold;
-    margin: 0 10px; /* Adjusted margin for better spacing */
+    margin: 0 12px; /* Adjusted margin for better spacing */
     text-decoration: none;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+
     transition: color 0.3s; /* Smooth transition for hover */
 }
 
