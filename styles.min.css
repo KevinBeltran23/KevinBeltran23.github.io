@@ -1,61 +1,73 @@
-/* General Styles */
+:root {
+    /* variables */
+    --cg-black: #333;
+    --cg-blue: #3a9bdc;
+    --cg-grey: #ccc;
+    --cg-light-grey: #f0f8ff;
+    --cg-white: #ffffff;
+    --cg-yellow: #ffcc00;
+    --cg-dark-blue: #2a7db2;
+  }
 
-h1 {
+  h1 {
     font-size: 2rem; /* Larger title */
-    color: #3a9bdc; /* Title color matching the theme */
+    color: var(--cg-blue); /* Title color matching the theme */
     margin-bottom: 20px; /* Space below the title */
-}
+  }
 
-h2 {
-    border-bottom: 2px solid #3a9bdc; /* Light blue border */
+  h2 {
+    border-bottom: 2px solid var(--cg-blue); /* Light blue border */
     padding-bottom: 5px;
     margin-bottom: 10px; /* Space below headings */
-    color: #3a9bdc; /* Heading color */
-}
+    color: var(--cg-blue); /* Heading color */
+  }
 
-p {
+  p {
     margin-bottom: 20px; /* Space below the paragraph */
     font-size: 1.1rem; /* Slightly larger font for better readability */
-    color: #333; /* Darker text for contrast */
-}
+    color: var(--cg-black); /* Darker text for contrast */
+  }
 
-html {
+  html {
     height: 100%;
-}
+  }
 
-body {
-    background-color: #f0f8ff; /* Light blue background */
+  body {
+    background-color: var(--cg-light-grey); /* Light blue background */
     position: relative;
     min-height: 100vh;
     padding: 0;
     margin: 0;
     font-family: Arial, sans-serif; /* Font for the whole site */
-}
+  }
 
-main {
+  main {
     padding: 0 20px 40px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+  }
 
-label {
+  label {
     font-weight: bold; /* Bold labels for better visibility */
     font-size: 1.5rem;
     margin-bottom: 5px; /* Space below labels */
     display: block; /* Make labels block to have full width */
-    color: #3a9bdc; /* Color matching the theme */
-}
+    color: var(--cg-blue); /* Color matching the theme */
+  }
 
-/* CSS for navigation bar */
+  /* CSS for navigation bar */
 
-.navbar {
-    position: -webkit-sticky;
+  .logo a {
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .navbar {
     position: sticky;
     top: 0;
     width: 100%;
-    height: auto; /* Changed to auto for dynamic height */
+    height: 60px;
     z-index: 10;
 
     display: flex;
@@ -63,21 +75,21 @@ label {
     align-items: center;
     text-align: center;
 
-    background-color: #3a9bdc; /* Light blue color */
+    background-color: var(--cg-blue);
     color: white;
-    padding: 0px 0px; /* Added padding for better spacing */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
 
-.nav-list {
+  .nav-list {
     display: flex;
     flex-direction: row; 
     position: relative;
     right: 30px;
     list-style: none;
-}
+  }
 
-.navbar a {
+  .navbar a {
     color: white;
     font-weight: bold;
     margin: 0 12px; /* Adjusted margin for better spacing */
@@ -85,44 +97,44 @@ label {
     letter-spacing: 2px;
 
     transition: color 0.3s; /* Smooth transition for hover */
-}
+  }
 
-.navbar a:hover {
-    color: #ffcc00; /* Hover color */
-}
+  .navbar a:hover {
+    color: var(--cg-yellow); /* Hover color */
+  }
 
-/* CSS for resume and similar entries/paragraphs */
-.resume {
+  /* CSS for resume and similar entries/paragraphs */
+  .resume {
     max-width: 800px; /* Centering the resume */
     margin: 0 auto; /* Centering */
-    background-color: #ffffff; /* White background for sections */
+    background-color: var(--cg-white); /* White background for sections */
     border-radius: 8px; /* Rounded corners */
     padding: 20px; /* Padding for sections */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
+  }
 
-.section {
+  .section {
     width: 100%; /* Ensures section takes full width */
     margin-bottom: 20px;
-}
+  }
 
-.entry {
+  .entry {
     margin-left: 0; /* Reset any unwanted left margin */
-}
+  }
 
-.skills-list,
-.course-list {
+  .skills-list,
+  .course-list {
     list-style-type: disc; /* Adjust based on preference */
     padding-left: 20px; /* Ensure all lists are aligned */
-}
+  }
 
-/* CSS for page footer */
+  /* CSS for page footer */
 
-.footer {
+  .footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3a9bdc; /* Light blue background */
+    background-color: var(--cg-blue); /* Light blue background */
     color: white;
     position: absolute;
     bottom: 0;
@@ -130,10 +142,10 @@ label {
     height: 2.5rem;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Shadow for footer */
     font-size: 14px; /* Font size for footer */
-}
+  }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     .navbar {
         flex-direction: column; /* Stack items on smaller screens */
         align-items: flex-start; /* Align items to the left */
@@ -146,12 +158,12 @@ label {
     .resume {
         padding: 15px; /* Reduce padding on smaller screens */
     }
-}
+  }
 
-/* CSS for Forms and Buttons */
+  /* CSS for Forms and Buttons */
 
-.download-button {
-    background-color: #3a9bdc; /* Button color matching the theme */
+  .download-button {
+    background-color: var(--cg-blue); /* Button color matching the theme */
     color: white; /* Text color */
     padding: 10px 20px; /* Padding for button */
     margin: 10px 0; /* Space above and below the download link */
@@ -162,46 +174,45 @@ label {
     font-size: 1rem; /* Font size */
     transition: background-color 0.3s; /* Smooth transition for hover */
     display: inline-block; /* Ensure proper button display */
-}
+  }
 
-.download-button:hover {
-    background-color: #2a7db2; /* Darker shade on hover */
-}
+  .download-button:hover {
+    background-color: var(--cg-dark-blue); /* Darker shade on hover */
+  }
 
-#contact-form {
-    background-color: #ffffff; /* White background for the form */
+  #contact-form {
+    background-color: var(--cg-white); /* White background for the form */
     border-radius: 8px; /* Rounded corners */
     padding: 30px; /* Increased padding for more space inside */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     max-width: 500px; /* Increased maximum width of the form */
     width: 100%; /* Responsive width */
-}
+  }
 
-input[type="text"],
-textarea {
+  input[type="text"],
+  textarea {
     width: 95%; /* Adjusted width */
     padding: 10px; /* Padding inside inputs */
     margin: 0 auto 20px auto; /* Centered horizontally and space below */
     display: block; /* Ensures block behavior for centering */
-    border: 1px solid #ccc; /* Light gray border */
+    border: 1px solid var(--cg-grey); /* Light gray border */
     border-radius: 4px; /* Slightly rounded corners */
     transition: border 0.3s; /* Smooth transition for focus */
-}
+  }
 
-
-input[type="text"]:focus,
-textarea:focus {
-    border-color: #3a9bdc; /* Change border color on focus */
+  input[type="text"]:focus,
+  textarea:focus {
+    border-color: var(--cg-blue); /* Change border color on focus */
     outline: none; /* Remove outline */
-}
+  }
 
-textarea {
+  textarea {
     height: 100px; /* Set a height for the textarea */
     resize: none; /* Prevent resizing */
-}
+  }
 
-input[type="submit"] {
-    background-color: #3a9bdc; /* Button color matching the theme */
+  input[type="submit"] {
+    background-color: var(--cg-blue); /* Button color matching the theme */
     color: white; /* Button text color */
     border: none; /* Remove border */
     padding: 10px 15px; /* Padding for button */
@@ -209,14 +220,14 @@ input[type="submit"] {
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s; /* Smooth transition for hover */
     font-weight: bold; /* Bold text on button */
-}
+  }
 
-input[type="submit"]:hover {
-    background-color: #2a7db2; /* Darker shade on hover */
-}
+  input[type="submit"]:hover {
+    background-color: var(--cg-dark-blue); /* Darker shade on hover */
+  }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
     #contact-form {
         padding: 15px; /* Reduce padding on smaller screens */
     }
@@ -228,5 +239,4 @@ input[type="submit"]:hover {
     p {
         font-size: 1rem; /* Adjust paragraph font size */
     }
-}
-
+  }
