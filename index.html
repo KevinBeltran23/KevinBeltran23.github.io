@@ -1,42 +1,172 @@
 <!DOCTYPE html>
-<html>
-  <head> 
-    <title>KevinBeltran_Website</title>
-    <link rel="stylesheet" href="styles.min.css" />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kevin Beltran</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <nav class="navbar">       
-      <h1 class="logo"><a href="index.html">Personal Website</a></h1>
-      <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <main>
-      <h1>About Me</h1>
-      <div class="about-container">
-        <div class="about-image">
-          <img height="320" width="256" src="ProfilePicture.jpg" alt="A profile picture of me on the beach shore. There is a pier in the background.">
+    <!-- Loading spinner -->
+    <div id="loading">
+      <div id="spinner"></div>
+    </div>
+
+    <!-- Left sidebar with profile & contact -->
+    <div id="profile">
+      <div id="profile_img"></div>
+      <div id="username">
+        <span>Kevin Beltran</span>
+      </div>
+      <div id="userbio">
+        CS & Math @ Cal Poly SLO · Cloud & Full-Stack Engineer
+      </div>
+      <div id="about">
+        <span><i class="fas fa-map-marker-alt"></i>&nbsp; San Luis Obispo, CA</span>
+        <span><i class="fas fa-envelope"></i>&nbsp; kevinbeltran2437@gmail.com</span>
+        <span><i class="fas fa-phone"></i>&nbsp; 805-416-9229</span>
+        <div class="socials">
+          <span><a href="https://github.com/kevinbeltran23" target="_blank"><i class="fab fa-github"></i> GitHub</a></span>
+          <span><a href="https://linkedin.com/in/kevinbeltran23" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></span>
         </div>
-        <div class="about-text">
-          <p>
-            I am a third year 
-            <strong>Computer Science</strong> student also pursuing a minor in 
-            <strong>Mathematics</strong>. I am from 
-            <em>Santa Maria, CA</em> and currently studying at 
-            <em>Cal Poly SLO</em>.
-          </p>
-          <p>
-            I love running in my free time, playing the piano, and going on evening hikes. I am involved in the 
-            <em>Cal Poly Distance Club</em> as well as the 
-            <em>Mustang Marching Band</em>. I also enjoy baking and playing board games. 
-          </p>
+        <a href="KevinBeltran_Resume.pdf" download class="resume-btn">
+          <i class="fas fa-download"></i>&nbsp; Download Resume
+        </a>
+      </div>
+    </div>
+
+    <!-- Right content area -->
+    <div id="display">
+      <!-- Projects / Work section -->
+      <div id="work">
+        <h1>Work.</h1>
+        <div class="projects" id="work_section">
+          <!-- 
+            ============================================
+            ADD YOUR PROJECTS HERE
+            Copy a project block and update the href, title, description, and language.
+            ============================================
+          -->
+          <a href="https://github.com/kevinbeltran23/shift-startup" target="_blank">
+            <section>
+              <div class="section_title">Shift Startup</div>
+              <div class="about_section">SaaS analytics platform ingesting Google Ads data with LLM-assisted optimization recommendations</div>
+              <div class="bottom_section">
+                <span><i class="fas fa-code"></i> Python / FastAPI / Supabase</span>
+              </div>
+            </section>
+          </a>
+
+          <a href="https://github.com/kevinbeltran23/accessibility-research" target="_blank">
+            <section>
+              <div class="section_title">Accessibility Research</div>
+              <div class="about_section">Cross-platform React Native/Expo app with on-device ML for crowdsourcing accessibility hazards</div>
+              <div class="bottom_section">
+                <span><i class="fas fa-code"></i> React Native / Firebase / TensorFlow Lite</span>
+              </div>
+            </section>
+          </a>
+
+          <a href="https://github.com/kevinbeltran23/hack4impact" target="_blank">
+            <section>
+              <div class="section_title">Hack4Impact – Spokes</div>
+              <div class="about_section">Next.js event board for nonprofit organization, leading a team of 9 developers and designers</div>
+              <div class="bottom_section">
+                <span><i class="fas fa-code"></i> Next.js / TypeScript</span>
+              </div>
+            </section>
+          </a>
+
+          <a href="https://github.com/kevinbeltran23/tesla-parking" target="_blank">
+            <section>
+              <div class="section_title">Tesla Parking App</div>
+              <div class="about_section">React Native logistics and parking availability app with real-time data and Redis caching</div>
+              <div class="bottom_section">
+                <span><i class="fas fa-code"></i> React Native / Node.js / Redis</span>
+              </div>
+            </section>
+          </a>
+
+          <a href="https://github.com/kevinbeltran23/odin-pipeline" target="_blank">
+            <section>
+              <div class="section_title">Odin Diagnostics Pipeline</div>
+              <div class="about_section">Hybrid event-driven AWS pipeline for automated concussion data ingestion and ML processing</div>
+              <div class="bottom_section">
+                <span><i class="fas fa-code"></i> Python / AWS Lambda / EC2 / SQS</span>
+              </div>
+            </section>
+          </a>
+
+          <!-- ADD MORE PROJECTS ABOVE THIS LINE -->
         </div>
       </div>
-    </main>
-    <footer class="footer">© 2023 KevinBeltran's Personal Website | All Rights Reserved</footer>
+
+      <!-- Blog section - reads from blog.json -->
+      <div id="blog_section">
+        <h1>Blog.</h1>
+        <div id="blogs"></div>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer">
+        <p>&copy; 2025 Kevin Beltran</p>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      // Loading animation
+      setTimeout(function () {
+        document.getElementById("loading").classList.add("animated");
+        document.getElementById("loading").classList.add("fadeOut");
+        setTimeout(function () {
+          document.getElementById("loading").classList.remove("animated");
+          document.getElementById("loading").classList.remove("fadeOut");
+          document.getElementById("loading").style.display = "none";
+        }, 800);
+      }, 1500);
+
+      // Load blog posts from blog.json
+      $.getJSON("blog.json", function (blog) {
+        blog = blog || [];
+        if (blog.length === 0) {
+          document.getElementById("blog_section").style.display = "none";
+          return;
+        }
+        for (var i = 0; i < blog.length; i++) {
+          $("#blogs").append(
+            '<a href="blog/' + blog[i].url_title + '/" target="_blank">' +
+              "<section>" +
+                (blog[i].top_image
+                  ? '<img src="blog/' + blog[i].url_title + "/" + blog[i].top_image + '">'
+                  : "") +
+                '<div class="blog_container">' +
+                  '<div class="section_title">' + blog[i].title + "</div>" +
+                  '<div class="about_section">' + blog[i].sub_title + "</div>" +
+                  '<div class="bottom_section"><span>' + (blog[i].date || "") + "</span></div>" +
+                "</div>" +
+              "</section>" +
+            "</a>"
+          );
+        }
+      }).fail(function () {
+        document.getElementById("blog_section").style.display = "none";
+      });
+    </script>
   </body>
 </html>
