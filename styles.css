@@ -64,10 +64,10 @@ body {
   text-align: left;
   background: linear-gradient(
       135deg,
-      rgba(10, 10, 10, 0.95),
-      rgba(20, 20, 40, 0.95)
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.8)
     ),
-    url("ProfilePicture.jpg") center center;
+    url("space1.jpg") center center;
   background-size: cover;
   position: fixed;
   top: 0;
