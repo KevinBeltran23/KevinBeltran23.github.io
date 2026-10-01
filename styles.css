@@ -25,34 +25,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* Loading spinner */
-#loading {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  background: var(--bg-color);
-  z-index: 999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  left: 0;
-}
-
-#spinner {
-  animation: rotate 0.5s infinite linear;
-  width: 50px;
-  height: 50px;
-  border: 2px solid var(--bg-color);
-  border-bottom: 2px solid var(--text-color);
-  border-radius: 50%;
-}
-
-@keyframes rotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
 /* Left profile sidebar */
 #profile {
   width: 24vw;
@@ -96,8 +68,15 @@ body {
   font-family: "Questrial", sans-serif;
 }
 
-#userbio {
+#usertitle {
   font-size: 18px;
+  font-family: "Questrial", sans-serif;
+  color: var(--accent-color);
+  margin: 1vh 0;
+}
+
+#userbio {
+  font-size: 15px;
   font-family: "Questrial", sans-serif;
   color: var(--gray-color);
   margin: 1vh 0;
@@ -113,6 +92,15 @@ body {
 #about span {
   display: block;
   margin: 1.2vh 0;
+}
+
+#about a:not(.resume-btn) {
+  color: inherit;
+  text-decoration: none;
+}
+
+#about a:not(.resume-btn):hover {
+  color: var(--accent-color);
 }
 
 #about span i {
@@ -185,7 +173,7 @@ body {
 
 .projects {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
 }
 
@@ -196,7 +184,9 @@ body {
 
 .projects section {
   width: 100%;
-  padding: 3vh 5%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 28px;
   border-radius: 8px;
   color: var(--text-color);
   background: var(--card-bg);
@@ -207,9 +197,99 @@ body {
 }
 
 .projects section:hover {
-  border-color: transparent;
+  border-color: rgba(100, 255, 218, 0.35);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-  transform: scale(1.02);
+}
+
+#projects {
+  margin-top: 8vh;
+}
+
+#about_me {
+  margin-top: 8vh;
+}
+
+.about_me_text {
+  max-width: 720px;
+  font-family: "Questrial", sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--gray-color);
+}
+
+.about_me_text p {
+  margin: 0 0 16px;
+}
+
+.about_me_text a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.about_me_text a:hover {
+  text-decoration: underline;
+}
+
+.card_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.card_head .section_title {
+  margin: 0;
+}
+
+.date {
+  font-size: 13px;
+  font-family: "Questrial", sans-serif;
+  color: var(--gray-color);
+  white-space: nowrap;
+}
+
+.role {
+  font-size: 15px;
+  color: var(--accent-color);
+  margin-top: 4px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.tags span {
+  font-size: 12px;
+  font-family: "Questrial", sans-serif;
+  padding: 3px 10px;
+  border-radius: 999px;
+  color: var(--gray-color);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.links a {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(100, 255, 218, 0.4);
+  color: var(--accent-color);
+  transition: all 0.2s ease;
+}
+
+.links a:hover {
+  background: var(--accent-color);
+  color: var(--bg-color);
 }
 
 .section_title {
@@ -222,7 +302,7 @@ body {
 .about_section {
   font-size: 15px;
   font-family: "Questrial", sans-serif;
-  margin: 1.5vh 0;
+  margin: 12px 0 16px;
   color: var(--gray-color);
   line-height: 1.5;
   word-wrap: break-word;
@@ -248,7 +328,7 @@ body {
 
 #blogs {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
 }
 
@@ -349,7 +429,11 @@ body {
   }
 
   .projects {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .card_head {
+    flex-wrap: wrap;
   }
 
   #blogs {

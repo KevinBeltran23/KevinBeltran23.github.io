@@ -3,10 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kevin Beltran</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    <title>Kevin Beltran | Software Engineer</title>
+    <meta
+      name="description"
+      content="Kevin Beltran: B.S. + M.S. Computer Science at Cal Poly SLO. Software Engineer."
+    />
+    <meta property="og:title" content="Kevin Beltran | Software Engineer" />
+    <meta
+      property="og:description"
+      content="B.S. + M.S. Computer Science at Cal Poly SLO. Software Engineer."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kevinbeltran23.github.io/" />
+    <meta
+      property="og:image"
+      content="https://kevinbeltran23.github.io/ProfilePicture.jpg"
     />
     <link
       rel="stylesheet"
@@ -23,19 +34,20 @@
   </head>
 
   <body>
-    <!-- Loading spinner -->
-    <div id="loading">
-      <div id="spinner"></div>
-    </div>
-
     <!-- Left sidebar with profile & contact -->
     <div id="profile">
-      <div id="profile_img"></div>
+      <div
+        id="profile_img"
+        role="img"
+        aria-label="Photo of Kevin Beltran"
+      ></div>
       <div id="username">
         <span>Kevin Beltran</span>
       </div>
+      <div id="usertitle">Software Engineer</div>
       <div id="userbio">
-        BS + MS Computer Science @ Cal Poly SLO Cloud & Full-Stack Engineer
+        B.S. Computer Science, Cal Poly SLO (June 2026)<br />
+        M.S. Computer Science, Cal Poly SLO (expected May 2027)
       </div>
       <div id="about">
         <span
@@ -43,204 +55,361 @@
         >
         <span
           ><i class="fas fa-envelope"></i>&nbsp;
-          kevinbeltran2437@gmail.com</span
+          <a href="mailto:kevinbeltran2437@gmail.com"
+            >kevinbeltran2437@gmail.com</a
+          ></span
         >
         <span><i class="fas fa-phone"></i>&nbsp; 805-416-9229</span>
         <div class="socials">
           <span
-            ><a href="https://github.com/kevinbeltran23" target="_blank"
+            ><a
+              href="https://github.com/kevinbeltran23"
+              target="_blank"
+              rel="noopener"
               ><i class="fab fa-github"></i> GitHub</a
             ></span
           >
           <span
-            ><a href="https://linkedin.com/in/kevinbeltran23" target="_blank"
+            ><a
+              href="https://www.linkedin.com/in/kevinbeltran23/"
+              target="_blank"
+              rel="noopener"
               ><i class="fab fa-linkedin"></i> LinkedIn</a
             ></span
           >
         </div>
-        <a href="KevinBeltran_Resume.pdf" download class="resume-btn">
-          <i class="fas fa-download"></i>&nbsp; Download Resume
+        <a
+          href="KevinBeltran_Resume.pdf"
+          target="_blank"
+          rel="noopener"
+          class="resume-btn"
+        >
+          <i class="fas fa-file-pdf"></i>&nbsp; View Resume
         </a>
       </div>
     </div>
 
     <!-- Right content area -->
     <div id="display">
-      <!-- Projects / Work section -->
+      <!-- Experience section -->
       <div id="experience">
-        <h1>Stuff I've Done.</h1>
-        <div class="projects" id="work_section">
-          <!-- 
+        <h1>Experience.</h1>
+        <div class="projects">
+          <!--
             ============================================
-            ADD YOUR PROJECTS HERE
-            Copy a project block and update the href, title, description, and language.
+            ADD EXPERIENCE / PROJECTS HERE
+            Copy a <section> block and update the title, date, role,
+            description, tags, and links. Remove the .links div if
+            there is nothing public to link to.
             ============================================
           -->
           <section>
-            <div class="section_title">ATPCO - Cloud Engineering Intern</div>
-            <div class="about_section">
-              Working with AWS to monitor system performance and build tools for
-              observability and system health
+            <div class="card_head">
+              <div class="section_title">ATPCO</div>
+              <div class="date">May 2026 – Present</div>
             </div>
-            <div class="bottom_section">
-              <span><i class="fas fa-code"></i> AWS / Python</span>
+            <div class="role">Cloud Engineering Intern</div>
+            <div class="about_section">
+              ATPCO is owned by a group of airlines and supplies the fare and
+              pricing data behind most airline tickets sold worldwide. Airlines,
+              travel agencies, and booking sites all depend on that data, so the
+              systems behind it need to be reliable and well monitored. I work
+              on the observability pod on the Platform Engineering team. I help
+              support product teams by building self-service pipelines and
+              designing cloud-based solutions using Jenkins, AWS, Grafana, and
+              GitHub Actions.
+            </div>
+            <div class="tags">
+              <span>AWS Lambda</span><span>CloudFormation</span
+              ><span>Jenkins</span><span>Groovy</span><span>Grafana</span>
             </div>
           </section>
 
           <section>
-            <div class="section_title">
-              Shift - Co-Founder and Lead Developer
+            <div class="card_head">
+              <div class="section_title">Tesla</div>
+              <div class="date">Oct 2025 – Mar 2026</div>
             </div>
+            <div class="role">Technical Lead, Industry-Sponsored Project</div>
             <div class="about_section">
-              SaaS analytics platform ingesting Google Ads data with
-              LLM-assisted optimization recommendations
+              Tesla sponsored a Cal Poly student project to make getting to work
+              easier for its employees. I was technical lead for a team of 10,
+              and we ran sprint reviews directly with Tesla management. The app
+              is React Native, backed by a Node.js/Express API that pulls from
+              Tesla's internal systems and caches in Redis to keep responses
+              under 50 ms. Tesla is now preparing it for production rollout.
             </div>
-            <div class="bottom_section">
-              <span
-                ><i class="fas fa-code"></i> Python / FastAPI / Supabase</span
+            <div class="tags">
+              <span>React Native</span><span>Node.js</span><span>Express</span
+              ><span>SQL Server</span><span>Redis</span>
+            </div>
+            <div class="links">
+              <a
+                href="https://github.com/dakpasala/tesla"
+                target="_blank"
+                rel="noopener"
+                ><i class="fab fa-github"></i> Code</a
+              >
+              <a
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7414836943257214976/"
+                target="_blank"
+                rel="noopener"
+                ><i class="fab fa-linkedin"></i> Post</a
+              >
+              <a
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7452758197087416320/"
+                target="_blank"
+                rel="noopener"
+                ><i class="fab fa-linkedin"></i> Follow-up Post</a
               >
             </div>
           </section>
-
-          <a href="https://github.com/dakpasala/tesla" target="_blank">
-            <section>
-              <div class="section_title">
-                Tesla - Industry Sponsored Project
-              </div>
-              <div class="about_section">
-                React Native logistics and parking availability app with
-                real-time data and Redis caching
-              </div>
-              <div class="bottom_section">
-                <span
-                  ><i class="fas fa-code"></i> React Native / Node.js /
-                  Redis</span
-                >
-              </div>
-            </section>
-          </a>
 
           <section>
-            <div class="section_title">
-              Odin Diagnostics - Cloud Engineering Intern
+            <div class="card_head">
+              <div class="section_title">Noch Inc.</div>
+              <div class="date">Sep 2025 – May 2026</div>
             </div>
+            <div class="role">Software Engineering Intern</div>
             <div class="about_section">
-              Hybrid event-driven AWS pipeline for automated concussion data
-              ingestion and ML processing
+              Noch is a social dining and restaurant-management platform. My
+              team and I took over its React/Node.js codebase with no
+              documentation, so the first job was reading through it to learn
+              how everything fit together. From there we cleaned up the data
+              models, added features like Stripe payments, set up testing and
+              static analysis, and wrote the docs I wish I'd had on day one.
             </div>
-            <div class="bottom_section">
-              <span
-                ><i class="fas fa-code"></i> Python / AWS Lambda / EC2 /
-                SQS</span
+            <div class="tags">
+              <span>React</span><span>Node.js</span><span>TypeScript</span
+              ><span>Stripe</span><span>Vitest</span>
+            </div>
+            <div class="links">
+              <a
+                href="https://cpsecapstone.github.io/noch-admin-frontend/"
+                target="_blank"
+                rel="noopener"
+                ><i class="fas fa-external-link-alt"></i> Live Demo</a
               >
             </div>
           </section>
 
-          <a
-            href="https://github.com/AI-Powered-Accessibility-Tracker/expo"
-            target="_blank"
-          >
-            <section>
-              <div class="section_title">
-                Public Spaces Accessibility Research
-              </div>
-              <div class="about_section">
-                Cross-platform React Native/Expo app with on-device ML for
-                crowdsourcing accessibility hazards in public spaces
-              </div>
-              <div class="bottom_section">
-                <span
-                  ><i class="fas fa-code"></i> React Native / Firebase /
-                  TensorFlow Lite</span
-                >
-              </div>
-            </section>
-          </a>
+          <section>
+            <div class="card_head">
+              <div class="section_title">Accessibility Research</div>
+              <div class="date">May 2025 – Oct 2025</div>
+            </div>
+            <div class="role">Student Researcher, Cal Poly</div>
+            <div class="about_section">
+              A summer research project on making public spaces easier to
+              navigate for people with disabilities. Anyone can photograph a
+              hazard like a broken sidewalk or missing curb ramp, and the app
+              detects it and pins it on a shared map. I trained YOLO models and
+              ran them on the phone with TensorFlow Lite so detection happens in
+              real time without a server, and built the React Native app around
+              them. We presented the work at SCAIR 2025.
+            </div>
+            <div class="tags">
+              <span>YOLO</span><span>TensorFlow Lite</span
+              ><span>React Native</span><span>Expo</span><span>Firebase</span>
+            </div>
+            <div class="links">
+              <a
+                href="https://digitalcommons.calpoly.edu/ceng_surp/103/"
+                target="_blank"
+                rel="noopener"
+                ><i class="fas fa-file-alt"></i> Paper</a
+              >
+              <a
+                href="https://github.com/AI-Powered-Accessibility-Tracker/expo"
+                target="_blank"
+                rel="noopener"
+                ><i class="fab fa-github"></i> Code</a
+              >
+              <a
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7394663891487801344/"
+                target="_blank"
+                rel="noopener"
+                ><i class="fab fa-linkedin"></i> Post</a
+              >
+            </div>
+          </section>
 
-          <a href="https://github.com/KevinBeltran23/RipSnapv2" target="_blank">
-            <section>
-              <div class="section_title">Rip Current Detection</div>
-              <div class="about_section">
-                Cross-platform React Native/Expo app with on-device ML for
-                detecting ripcurrents
-              </div>
-              <div class="bottom_section">
-                <span
-                  ><i class="fas fa-code"></i> React Native / Firebase /
-                  TensorFlow Lite</span
-                >
-              </div>
-            </section>
-          </a>
+          <section>
+            <div class="card_head">
+              <div class="section_title">Odin Diagnostics</div>
+              <div class="date">Sep 2024 – Jun 2025</div>
+            </div>
+            <div class="role">Cloud Engineering Intern</div>
+            <div class="about_section">
+              Odin Diagnostics builds concussion assessments from eye-tracking
+              data. The device's API only ran on Windows, so I built an AWS
+              pipeline that spins up temporary Windows EC2 workers to pull in
+              and process new data automatically. I also wrote a Python library
+              that turns raw 3D gaze data into the features their analysis uses,
+              and trimmed storage enough to keep everything in the AWS Free
+              Tier.
+            </div>
+            <div class="tags">
+              <span>Python</span><span>AWS Lambda</span><span>SQS</span
+              ><span>EC2</span>
+            </div>
+          </section>
 
-          <a href="https://github.com/Deep-Singh14/spokes26" target="_blank">
-            <section>
-              <div class="section_title">Hack4Impact – Tech Lead</div>
-              <div class="about_section">
-                Next.js event board for nonprofit organization Spokes, leading a
-                team of 9 developers and designers
-              </div>
-              <div class="bottom_section">
-                <span><i class="fas fa-code"></i> Next.js / TypeScript</span>
-              </div>
-            </section>
-          </a>
-
-          <a
-            href="https://github.com/kevinbeltran23/spread-goodness"
-            target="_blank"
-          >
-            <section>
-              <div class="section_title">
-                Noch Inc. - Software Developer Intern
-              </div>
-              <div class="about_section">
-                Social dining and restaurant management SaaS platform
-              </div>
-              <div class="bottom_section">
-                <span
-                  ><i class="fas fa-code"></i> Next.js / Node.js / TypeScript /
-                  MongoDB</span
-                >
-              </div>
-            </section>
-          </a>
+          <section>
+            <div class="card_head">
+              <div class="section_title">Hack4Impact</div>
+              <div class="date">Sep 2024 – Jun 2026</div>
+            </div>
+            <div class="role">Technical Lead</div>
+            <div class="about_section">
+              Hack4Impact is a Cal Poly club that builds free software for
+              nonprofits. Our client, Spokes, supports local nonprofits, and its
+              job board relied on staff copying form submissions out of Google
+              Sheets by hand. As co-tech lead for a team of 9, I helped build
+              and ship a Next.js job and event board that nonprofits post to
+              directly, saving staff 20+ hours a week.
+            </div>
+            <div class="tags"><span>Next.js</span><span>TypeScript</span></div>
+            <div class="links">
+              <a
+                href="https://services.spokesfornonprofits.org/events"
+                target="_blank"
+                rel="noopener"
+                ><i class="fas fa-external-link-alt"></i> Live Site</a
+              >
+              <a
+                href="https://github.com/hack4impact-calpoly/spokes"
+                target="_blank"
+                rel="noopener"
+                ><i class="fab fa-github"></i> Code</a
+              >
+            </div>
+          </section>
         </div>
       </div>
 
-      <!-- For Fun section -->
+      <!-- Projects section -->
       <div id="projects">
-        <h1>For Fun.</h1>
-        <div class="projects" id="work_section">
-          <!-- 
-            ============================================
-            ADD YOUR PROJECTS HERE
-            Copy a project block and update the href, title, description, and language.
-            ============================================
-          -->
+        <h1>Projects.</h1>
+        <div class="projects">
+          <section>
+            <div class="card_head">
+              <div class="section_title">ShiftAI</div>
+              <div class="date">In progress</div>
+            </div>
+            <div class="role">Co-Founder & Lead Developer</div>
+            <div class="about_section">
+              A startup I co-founded and lead development on. ShiftAI pulls in a
+              business's Google Ads data, makes it easy to see which campaigns
+              are working, and uses an LLM to suggest what to change. The beta
+              is live.
+            </div>
+            <div class="tags">
+              <span>Python</span><span>FastAPI</span><span>Supabase</span>
+            </div>
+            <div class="links">
+              <a
+                href="https://shift-frontend-beta.vercel.app/"
+                target="_blank"
+                rel="noopener"
+                ><i class="fas fa-external-link-alt"></i> Live Beta</a
+              >
+            </div>
+          </section>
 
-          <a
-            href="https://github.com/KevinBeltran23/kiroheroes"
-            target="_blank"
-          >
-            <section>
-              <div class="section_title">StickSplit – KiroHacks</div>
-              <div class="about_section">
-                Snare drumming technique analysis app
-              </div>
-              <div class="bottom_section">
-                <span
-                  ><i class="fas fa-code"></i> React Native / Firebase /
-                  CloudRun / MediaPipe
-                </span>
-              </div>
-            </section>
-          </a>
+          <section>
+            <div class="card_head">
+              <div class="section_title">RipSnap</div>
+            </div>
+            <div class="role">Rip Current Detection</div>
+            <div class="about_section">
+              Rip currents are hard to spot from the beach, even for strong
+              swimmers. RipSnap points your phone's camera at the water and
+              highlights rip currents live using an on-device TensorFlow Lite
+              model, then lets you save and upload captures. Next up is an
+              optional mode that streams video to a server running heavier
+              models.
+            </div>
+            <div class="tags">
+              <span>React Native</span><span>TensorFlow Lite</span
+              ><span>Firebase</span>
+            </div>
+            <div class="links">
+              <a
+                href="https://github.com/KevinBeltran23/RipSnapv2"
+                target="_blank"
+                rel="noopener"
+                ><i class="fab fa-github"></i> Code</a
+              >
+            </div>
+          </section>
+
+          <section>
+            <div class="card_head">
+              <div class="section_title">StickSplit</div>
+              <div class="date">Hackathon</div>
+            </div>
+            <div class="role">Drumming Technique Analysis</div>
+            <div class="about_section">
+              Built at KiroHacks. In drumline, instructors say things like "use
+              more wrist, less arm," but that's hard to see in your own playing.
+              StickSplit records a snare rep, tracks movement with MediaPipe,
+              and shows how much of each stroke comes from fingers, wrist, and
+              arm over time, with plain-language coaching feedback.
+            </div>
+            <div class="tags">
+              <span>React Native</span><span>MediaPipe</span
+              ><span>Cloud Run</span><span>Firebase</span>
+            </div>
+            <div class="links">
+              <a
+                href="https://devpost.com/software/stick-split"
+                target="_blank"
+                rel="noopener"
+                ><i class="fas fa-trophy"></i> Devpost</a
+              >
+              <a
+                href="https://github.com/KevinBeltran23/kiroheroes"
+                target="_blank"
+                rel="noopener"
+                ><i class="fab fa-github"></i> Code</a
+              >
+            </div>
+          </section>
         </div>
       </div>
 
-      <!-- Blog section - reads from blog.json -->
-      <div id="blog_section">
+      <!-- About Me section -->
+      <div id="about_me">
+        <h1>About Me.</h1>
+        <div class="about_me_text">
+          <p>
+            Outside of code, I'm on staff as the Technical Coordinator for the
+            <a
+              href="https://www.calpolycatprogram.org/"
+              target="_blank"
+              rel="noopener"
+              >Cal Poly Cat Program</a
+            >, Cal Poly's on-campus cat shelter. In my free time I run track and
+            cross country with the Cal Poly Distance Club, although recently
+            have been spending more time hiking. I really love the Eastern
+            Sierra and hope to do the High Sierra Trail sometime in the near
+            future.
+          </p>
+          <p>
+            Music has been a big part of college for me. I played baritone in
+            the Cal Poly Marching Band for three years, and piano throughout
+            middle and high school before that.
+          </p>
+          <p>
+            I'm also a big fan of roguelikes. Enter the Gungeon is my favorite,
+            and someday I'd love to build an indie roguelike of my own.
+          </p>
+        </div>
+      </div>
+
+      <!-- Blog section - reads from blog.json. Remove "hidden" to show it. -->
+      <div id="blog_section" hidden>
         <h1>Blog.</h1>
         <div id="blogs"></div>
       </div>
@@ -252,17 +421,6 @@
     </div>
 
     <script type="text/javascript">
-      // Loading animation
-      setTimeout(function () {
-        document.getElementById("loading").classList.add("animated");
-        document.getElementById("loading").classList.add("fadeOut");
-        setTimeout(function () {
-          document.getElementById("loading").classList.remove("animated");
-          document.getElementById("loading").classList.remove("fadeOut");
-          document.getElementById("loading").style.display = "none";
-        }, 800);
-      }, 1500);
-
       // Load blog posts from blog.json
       $.getJSON("blog.json", function (blog) {
         blog = blog || [];
@@ -274,14 +432,14 @@
           $("#blogs").append(
             '<a href="blog/' +
               blog[i].url_title +
-              '/" target="_blank">' +
+              '/">' +
               "<section>" +
               (blog[i].top_image
                 ? '<img src="blog/' +
                   blog[i].url_title +
                   "/" +
                   blog[i].top_image +
-                  '">'
+                  '" alt="">'
                 : "") +
               '<div class="blog_container">' +
               '<div class="section_title">' +

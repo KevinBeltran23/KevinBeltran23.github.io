@@ -35,21 +35,27 @@ ProfilePicture.jpg  - Profile photo
 
 If you don't have a cover image, set `"top_image": ""` or remove the field.
 
-## How to Add/Edit Projects
+## How to Add/Edit Experience or Projects
 
-Open `index.html` and find the `<!-- ADD YOUR PROJECTS HERE -->` comment in the `#work_section` div. Copy an existing project block and update:
+Open `index.html` and find the `<!-- ADD EXPERIENCE / PROJECTS HERE -->` comment. Copy an existing `<section>` block into the `Experience.` or `Projects.` grid and update it:
 
 ```html
-<a href="https://github.com/kevinbeltran23/your-repo" target="_blank">
-  <section>
-    <div class="section_title">Project Name</div>
-    <div class="about_section">Short description of the project</div>
-    <div class="bottom_section">
-      <span><i class="fas fa-code"></i> Tech Stack</span>
-    </div>
-  </section>
-</a>
+<section>
+  <div class="card_head">
+    <div class="section_title">Company or Project</div>
+    <div class="date">Sep 2025 – May 2026</div>
+  </div>
+  <div class="role">Role</div>
+  <div class="about_section">One or two sentences on impact.</div>
+  <div class="tags"><span>React</span><span>Node.js</span></div>
+  <div class="links">
+    <a href="https://github.com/..." target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+    <a href="https://..." target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+  </div>
+</section>
 ```
+
+Remove the `.links` div if there is nothing public to link to.
 
 ## How to Update Contact Info
 
