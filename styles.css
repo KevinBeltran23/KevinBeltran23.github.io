@@ -83,6 +83,11 @@ body {
   line-height: 1.4;
 }
 
+.bio-note {
+  display: inline-block;
+  margin-top: 0.35em;
+}
+
 #about {
   font-size: 15px;
   font-family: "Questrial", sans-serif;
@@ -156,6 +161,8 @@ body {
   padding: 6vh 4vw;
   margin-left: 30vw;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 #display h1 {
@@ -207,7 +214,29 @@ body {
 }
 
 #about_me {
+  order: 1;
+  margin-top: 0;
+}
+
+#selected_projects {
+  order: 2;
+}
+
+#research {
+  order: 3;
+}
+
+#work_experience {
+  order: 4;
   margin-top: 8vh;
+}
+
+#blog_section {
+  order: 5;
+}
+
+#footer {
+  order: 6;
 }
 
 .about_me_text {
