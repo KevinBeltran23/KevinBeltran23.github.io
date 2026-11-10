@@ -12,7 +12,7 @@ blog/               - Blog post folders
   hello-world/
     index.html      - Individual blog post
     cover.jpg       - Optional cover image
-KevinBeltran_Resume.pdf - Resume for download
+KevinBeltran_Resume_.pdf - Resume for download
 ProfilePicture.jpg  - Profile photo
 ```
 
@@ -35,9 +35,9 @@ ProfilePicture.jpg  - Profile photo
 
 If you don't have a cover image, set `"top_image": ""` or remove the field.
 
-## How to Add/Edit Experience or Projects
+## How to Add/Edit Work Experience, Research, or Selected Projects
 
-Open `index.html` and find the `<!-- ADD EXPERIENCE / PROJECTS HERE -->` comment. Copy an existing `<section>` block into the `Experience.` or `Projects.` grid and update it:
+Open `index.html` and find the `<!-- ADD WORK EXPERIENCE HERE -->` comment. Copy an existing `<section>` block into the `Work Experience.`, `Research.`, or `Selected Projects.` grid and update it:
 
 ```html
 <section>
@@ -63,4 +63,4 @@ Edit the `#profile` section in `index.html`. All contact info is in the left sid
 
 ## How to Update Resume
 
-Replace `KevinBeltran_Resume.pdf` with the new file (keep the same filename).
+Replace `KevinBeltran_Resume_.pdf` with the new file (keep the same filename).

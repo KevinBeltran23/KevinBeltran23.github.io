@@ -46,8 +46,8 @@
       </div>
       <div id="usertitle">Software Engineer</div>
       <div id="userbio">
-        B.S. Computer Science, Cal Poly SLO (June 2026)<br />
-        M.S. Computer Science, Cal Poly SLO (expected May 2027)
+        B.S. Computer Science, Cal Poly SLO (Graduated June 2026)<br />
+        M.S. Computer Science, Cal Poly SLO (Expected December 2027)
       </div>
       <div id="about">
         <span
@@ -79,7 +79,7 @@
           >
         </div>
         <a
-          href="KevinBeltran_Resume.pdf"
+          href="KevinBeltran_Resume_.pdf"
           target="_blank"
           rel="noopener"
           class="resume-btn"
@@ -91,13 +91,13 @@
 
     <!-- Right content area -->
     <div id="display">
-      <!-- Experience section -->
-      <div id="experience">
-        <h1>Experience.</h1>
+      <!-- Work Experience section -->
+      <div id="work_experience">
+        <h1>Work Experience.</h1>
         <div class="projects">
           <!--
             ============================================
-            ADD EXPERIENCE / PROJECTS HERE
+            ADD WORK EXPERIENCE HERE
             Copy a <section> block and update the title, date, role,
             description, tags, and links. Remove the .links div if
             there is nothing public to link to.
@@ -127,8 +127,185 @@
 
           <section>
             <div class="card_head">
+              <div class="section_title">Noch Inc.</div>
+              <div class="date">October 2025 – May 2026</div>
+            </div>
+            <div class="role">Software Engineering Intern</div>
+            <div class="about_section">
+              Noch is a social dining and restaurant-management platform. My
+              team and I took over its React/Node.js codebase with no
+              documentation, so the first job was reading through it to learn
+              how everything fit together. From there we cleaned up the data
+              models, added features like Stripe payments, set up testing and
+              static analysis, and wrote the docs I wish I'd had on day one.
+            </div>
+            <div class="tags">
+              <span>React</span><span>Node.js</span><span>TypeScript</span
+              ><span>Stripe</span><span>Vitest</span>
+            </div>
+            <div class="links">
+              <a
+                href="https://cpsecapstone.github.io/noch-admin-frontend/"
+                target="_blank"
+                rel="noopener"
+                ><i class="fas fa-external-link-alt"></i> Live Demo</a
+              >
+            </div>
+          </section>
+
+          <section>
+            <div class="card_head">
+              <div class="section_title">Odin Diagnostics</div>
+              <div class="date">September 2024 – May 2025</div>
+            </div>
+            <div class="role">Cloud Engineering Intern</div>
+            <div class="about_section">
+              Odin Diagnostics builds concussion assessments from eye-tracking
+              data. The device's API only ran on Windows, so I built an AWS
+              pipeline that spins up temporary Windows EC2 workers to pull in
+              and process new data automatically. I also wrote a Python library
+              that turns raw 3D gaze data into the features their analysis uses,
+              and trimmed storage enough to keep everything in the AWS Free
+              Tier.
+            </div>
+            <div class="tags">
+              <span>Python</span><span>AWS Lambda</span><span>SQS</span
+              ><span>EC2</span>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Research section -->
+      <div id="research">
+        <h1>Research.</h1>
+        <div class="projects">
+          <section>
+            <div class="section_title">Thesis</div>
+            <div class="about_section">
+              I am currently building my thesis off of my previous work in
+              public accessibility. Currently, I am benchmarking the dataset
+              that we built. It is comprised of about 46k+ images of
+              accessibility features such as gaurdrails, curb ramps, and
+              crosswalks. In order to benchmark I am analyzing data leakage,
+              label quality, comparing model performance, and re-structuring the
+              dataset to address any faults, as well as subsequently re-tuning
+              our yolo models. Following this I plan to do additional data
+              analysis to serve as a foundation for my thesis research
+              questions. I am still deciding exactly what I want to focus on,
+              but I am interested in the accuracy and performance of visual
+              language models compared to traditional object detection models,
+              as well as the potential for visual language models to be used in
+              accessibility applications. I also hope to incorporate and do
+              additional work on the accessibiliy application that I developed
+              as part of my thesis.
+            </div>
+          </section>
+
+          <section>
+            <div class="card_head">
+              <div class="section_title">RipSnap</div>
+              <div class="date">June 2026 – October 2026</div>
+            </div>
+            <div class="role">Rip Current Detection</div>
+            <div class="about_section">
+              Rip currents are hard to spot from the beach, even for strong
+              swimmers. RipSnap points your phone's camera at the water and
+              highlights rip currents live using an on-device TensorFlow Lite
+              model, then lets you save and upload captures. I am currently
+              working on migrating the original Swift application to React
+              Native and integrating new YOLOv8 models, as well as adding
+              additional funcitonality such as a map of rip current detections
+              and remote streaming with real time detection from a GPU server.
+            </div>
+            <div class="tags">
+              <span>React Native</span><span>TensorFlow Lite</span
+              ><span>Firebase</span>
+            </div>
+            <div class="links">
+              <a
+                href="https://github.com/KevinBeltran23/RipSnapv2"
+                target="_blank"
+                rel="noopener"
+                ><i class="fab fa-github"></i> Code</a
+              >
+            </div>
+          </section>
+
+          <section>
+            <div class="card_head">
+              <div class="section_title">Accessibility Research</div>
+              <div class="date">June 2025 – October 2025</div>
+            </div>
+            <div class="role">Student Researcher, Cal Poly</div>
+            <div class="about_section">
+              A summer research project on making public spaces easier to
+              navigate for people with disabilities. Anyone can photograph a
+              hazard like a broken sidewalk or missing curb ramp, and the app
+              detects it and pins it on a shared map. I trained YOLO models and
+              ran them on the phone with TensorFlow Lite so detection happens in
+              real time without a server, and built the React Native app around
+              them. We presented the work at SCAIR 2025.
+            </div>
+            <div class="tags">
+              <span>YOLO</span><span>TensorFlow Lite</span
+              ><span>React Native</span><span>Expo</span><span>Firebase</span>
+            </div>
+            <div class="links">
+              <a
+                href="https://digitalcommons.calpoly.edu/ceng_surp/103/"
+                target="_blank"
+                rel="noopener"
+                ><i class="fas fa-file-alt"></i> Paper</a
+              >
+              <a
+                href="https://github.com/AI-Powered-Accessibility-Tracker/expo"
+                target="_blank"
+                rel="noopener"
+                ><i class="fab fa-github"></i> Code</a
+              >
+              <a
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7394663891487801344/"
+                target="_blank"
+                rel="noopener"
+                ><i class="fab fa-linkedin"></i> Post</a
+              >
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Selected Projects section -->
+      <div id="selected_projects">
+        <h1>Selected Projects.</h1>
+        <div class="projects">
+          <section>
+            <div class="card_head">
+              <div class="section_title">BayFillr</div>
+              <div class="date">In progress</div>
+            </div>
+            <div class="role">Co-Founder & Lead Developer</div>
+            <div class="about_section">
+              A startup I co-founded and lead development on. BayFillr pulls in
+              a business's Google Ads data, makes it easy to see which campaigns
+              are working, and uses an LLM to suggest what to change. We are
+              working on an end-to-end workflow complete with automated SEO and
+              simple to non-technical UX with minimal setup and high control.
+            </div>
+            <div class="tags">
+              <span>Python</span><span>FastAPI</span><span>Supabase</span>
+            </div>
+            <div class="links">
+              <a href="https://www.bayfillr.com/" target="_blank" rel="noopener"
+                ><i class="fas fa-external-link-alt"></i> Live Beta</a
+              >
+            </div>
+          </section>
+
+          <section>
+            <div class="card_head">
               <div class="section_title">Tesla</div>
-              <div class="date">Oct 2025 – Mar 2026</div>
+              <div class="date">October 2025 – March 2026</div>
             </div>
             <div class="role">Technical Lead, Industry-Sponsored Project</div>
             <div class="about_section">
@@ -167,98 +344,8 @@
 
           <section>
             <div class="card_head">
-              <div class="section_title">Noch Inc.</div>
-              <div class="date">Sep 2025 – May 2026</div>
-            </div>
-            <div class="role">Software Engineering Intern</div>
-            <div class="about_section">
-              Noch is a social dining and restaurant-management platform. My
-              team and I took over its React/Node.js codebase with no
-              documentation, so the first job was reading through it to learn
-              how everything fit together. From there we cleaned up the data
-              models, added features like Stripe payments, set up testing and
-              static analysis, and wrote the docs I wish I'd had on day one.
-            </div>
-            <div class="tags">
-              <span>React</span><span>Node.js</span><span>TypeScript</span
-              ><span>Stripe</span><span>Vitest</span>
-            </div>
-            <div class="links">
-              <a
-                href="https://cpsecapstone.github.io/noch-admin-frontend/"
-                target="_blank"
-                rel="noopener"
-                ><i class="fas fa-external-link-alt"></i> Live Demo</a
-              >
-            </div>
-          </section>
-
-          <section>
-            <div class="card_head">
-              <div class="section_title">Accessibility Research</div>
-              <div class="date">May 2025 – Oct 2025</div>
-            </div>
-            <div class="role">Student Researcher, Cal Poly</div>
-            <div class="about_section">
-              A summer research project on making public spaces easier to
-              navigate for people with disabilities. Anyone can photograph a
-              hazard like a broken sidewalk or missing curb ramp, and the app
-              detects it and pins it on a shared map. I trained YOLO models and
-              ran them on the phone with TensorFlow Lite so detection happens in
-              real time without a server, and built the React Native app around
-              them. We presented the work at SCAIR 2025.
-            </div>
-            <div class="tags">
-              <span>YOLO</span><span>TensorFlow Lite</span
-              ><span>React Native</span><span>Expo</span><span>Firebase</span>
-            </div>
-            <div class="links">
-              <a
-                href="https://digitalcommons.calpoly.edu/ceng_surp/103/"
-                target="_blank"
-                rel="noopener"
-                ><i class="fas fa-file-alt"></i> Paper</a
-              >
-              <a
-                href="https://github.com/AI-Powered-Accessibility-Tracker/expo"
-                target="_blank"
-                rel="noopener"
-                ><i class="fab fa-github"></i> Code</a
-              >
-              <a
-                href="https://www.linkedin.com/feed/update/urn:li:activity:7394663891487801344/"
-                target="_blank"
-                rel="noopener"
-                ><i class="fab fa-linkedin"></i> Post</a
-              >
-            </div>
-          </section>
-
-          <section>
-            <div class="card_head">
-              <div class="section_title">Odin Diagnostics</div>
-              <div class="date">Sep 2024 – Jun 2025</div>
-            </div>
-            <div class="role">Cloud Engineering Intern</div>
-            <div class="about_section">
-              Odin Diagnostics builds concussion assessments from eye-tracking
-              data. The device's API only ran on Windows, so I built an AWS
-              pipeline that spins up temporary Windows EC2 workers to pull in
-              and process new data automatically. I also wrote a Python library
-              that turns raw 3D gaze data into the features their analysis uses,
-              and trimmed storage enough to keep everything in the AWS Free
-              Tier.
-            </div>
-            <div class="tags">
-              <span>Python</span><span>AWS Lambda</span><span>SQS</span
-              ><span>EC2</span>
-            </div>
-          </section>
-
-          <section>
-            <div class="card_head">
               <div class="section_title">Hack4Impact</div>
-              <div class="date">Sep 2024 – Jun 2026</div>
+              <div class="date">September 2024 – June 2026</div>
             </div>
             <div class="role">Technical Lead</div>
             <div class="about_section">
@@ -279,64 +366,6 @@
               >
               <a
                 href="https://github.com/hack4impact-calpoly/spokes"
-                target="_blank"
-                rel="noopener"
-                ><i class="fab fa-github"></i> Code</a
-              >
-            </div>
-          </section>
-        </div>
-      </div>
-
-      <!-- Projects section -->
-      <div id="projects">
-        <h1>Projects.</h1>
-        <div class="projects">
-          <section>
-            <div class="card_head">
-              <div class="section_title">ShiftAI</div>
-              <div class="date">In progress</div>
-            </div>
-            <div class="role">Co-Founder & Lead Developer</div>
-            <div class="about_section">
-              A startup I co-founded and lead development on. ShiftAI pulls in a
-              business's Google Ads data, makes it easy to see which campaigns
-              are working, and uses an LLM to suggest what to change. The beta
-              is live.
-            </div>
-            <div class="tags">
-              <span>Python</span><span>FastAPI</span><span>Supabase</span>
-            </div>
-            <div class="links">
-              <a
-                href="https://shift-frontend-beta.vercel.app/"
-                target="_blank"
-                rel="noopener"
-                ><i class="fas fa-external-link-alt"></i> Live Beta</a
-              >
-            </div>
-          </section>
-
-          <section>
-            <div class="card_head">
-              <div class="section_title">RipSnap</div>
-            </div>
-            <div class="role">Rip Current Detection</div>
-            <div class="about_section">
-              Rip currents are hard to spot from the beach, even for strong
-              swimmers. RipSnap points your phone's camera at the water and
-              highlights rip currents live using an on-device TensorFlow Lite
-              model, then lets you save and upload captures. Next up is an
-              optional mode that streams video to a server running heavier
-              models.
-            </div>
-            <div class="tags">
-              <span>React Native</span><span>TensorFlow Lite</span
-              ><span>Firebase</span>
-            </div>
-            <div class="links">
-              <a
-                href="https://github.com/KevinBeltran23/RipSnapv2"
                 target="_blank"
                 rel="noopener"
                 ><i class="fab fa-github"></i> Code</a
